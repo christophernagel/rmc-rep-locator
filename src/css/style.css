@@ -5,20 +5,59 @@
   margin: 0 auto;
 }
 
-/* State Select Area */
-.rep-state-select {
-  margin-bottom: 2rem;
-  width: 16rem;
+/* Rep Locator Layout */
+.rep-locator-layout {
+  display: block;
+  width: 100%;
 }
 
-.rep-state-dropdown {
+.rep-locator-content {
   width: 100%;
-  padding: 0.5rem;
+}
+
+/* Filters Area */
+.rep-filters {
+  display: flex;
+  flex-direction: row;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.rep-filter-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  position: relative;
+  width: 300px;
+}
+
+.rep-filter-label {
+  font-weight: 500;
+  color: #374151;
+  font-size: 0.875rem;
+}
+
+.rep-select {
+  width: 100%;
+  padding: 0.75rem 1rem;
   border: 1px solid #e5e7eb;
   border-radius: 0.375rem;
   background-color: white;
   color: #374151;
   font-size: 0.875rem;
+  transition: all 0.2s ease;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  cursor: pointer;
+  position: relative; /* Add this */
+}
+
+/* Ensure dropdown appears below */
+.rep-select option {
+  position: absolute;
+  background-color: white;
+  border: none;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
 }
 
 /* Grid Layout */
@@ -28,31 +67,81 @@
   gap: 20px;
 }
 
+.rep-grid-empty {
+  padding: 2rem;
+  text-align: center;
+  color: #6b7280;
+  background: #f9fafb;
+  border-radius: 0.5rem;
+  border: 1px solid #e5e7eb;
+}
+
 /* Individual Rep Card */
 .rep-card {
+  background: white;
   border: 1px solid #e5e7eb;
   border-radius: 0.5rem;
-  background: white;
   overflow: hidden;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease !important; /* Add !important */
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Strengthen hover effects */
+.rep-card:hover {
+  transform: translateY(-2px) !important;
+  box-shadow:
+    0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06) !important;
 }
 
 .rep-card-content {
   padding: 1.5rem;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
 }
 
 .rep-card-title {
-  margin: 0 0 1rem 0;
-  color: #333;
-  font-size: 1.2em;
+  margin: 0 0 0.5rem 0;
+  color: #111827;
+  font-size: 1.25rem;
   font-weight: 600;
+  line-height: 1.4;
+}
+
+.rep-card-subtitle {
+  color: #6b7280;
+  font-size: 0.875rem;
+  margin-bottom: 1rem;
+  line-height: 1.4;
+}
+
+.rep-location {
+  display: inline-block;
+  margin-left: 0.5rem;
+  padding-left: 0.5rem;
+  border-left: 2px solid #e5e7eb;
+}
+
+.rep-card-details {
+  color: #6b7280;
+  margin-top: auto;
 }
 
 /* Contact Info Styling */
 .rep-contact-item {
   display: flex;
-  align-items: start;
+  align-items: center;
   gap: 0.75rem;
   margin-bottom: 0.75rem;
+}
+
+.rep-contact-item:last-child {
+  margin-bottom: 0;
 }
 
 .rep-contact-icon {
@@ -62,32 +151,49 @@
   flex-shrink: 0;
 }
 
-.rep-contact-text,
-.rep-phone-link {
+.rep-contact-link {
   color: #4b5563;
   font-size: 0.875rem;
   line-height: 1.5;
-  text-decoration: none;
+  text-decoration: none !important; /* Add !important */
   font-style: normal;
+  word-break: break-word;
+  transition: color 0.2s ease !important; /* Add !important */
 }
 
-.rep-phone-link:hover {
-  text-decoration: underline;
+/* Strengthen hover effect for links */
+.rep-contact-link:hover {
+  color: #f2562c !important;
+  text-decoration: underline !important;
 }
 
-/* Responsive */
+/* Responsive Design */
 @media (max-width: 1200px) {
   .rep-cards-grid {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .rep-filter-group {
+    width: 100%;
+    max-width: 300px;
+  }
 }
 
 @media (max-width: 768px) {
+  .rep-locator-container {
+    padding: 0.75rem;
+  }
+
   .rep-cards-grid {
     grid-template-columns: 1fr;
   }
 
   .rep-state-select {
     width: 100%;
+    max-width: none;
+  }
+
+  .rep-card-title {
+    font-size: 1.125rem;
   }
 }
