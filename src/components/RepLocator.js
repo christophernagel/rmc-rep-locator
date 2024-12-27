@@ -110,8 +110,8 @@ const RepLocator = () => {
     },
     {
       id: 11,
-      name: "Sean Dunham",
-      title: "Managing Partner",
+      name: "EMS Partners - Minneapolis",
+      title: "Sean Dunham, Managing Partner",
       email: "Sean.dunham@emspartnersinc.com",
       phone: "612.201.4795",
       states: [
@@ -125,8 +125,9 @@ const RepLocator = () => {
     },
     {
       id: 12,
-      name: "Mike Skovran",
-      title: "Managing Partner & Manager- Contractor and Industrial business",
+      name: "EMS Partners - Minneapolis",
+      title:
+        "Mike Skovran, Managing Partner & Manager- Contractor and Industrial business",
       email: "mskovran@emspartners.com",
       phone: "612.388.0119",
       states: [
@@ -140,8 +141,8 @@ const RepLocator = () => {
     },
     {
       id: 13,
-      name: "Tim Sanford",
-      title: "Inside Sales Manager",
+      name: "EMS Partners - Minneapolis",
+      title: "Tim Sanford, Inside Sales Manager",
       email: "Tim.sanford@emspartnersinc.com",
       phone: "763.222.7188",
       states: [
@@ -155,8 +156,8 @@ const RepLocator = () => {
     },
     {
       id: 14,
-      name: "Rich Donley",
-      title: "Account Manager - Graybar & Contractor Activities",
+      name: "EMS Partners - Minneapolis",
+      title: "Rich Donley, Account Manager - Graybar & Contractor Activities",
       email: "Rich.donley@emspartnersinc.com",
       phone: "612.247.8887",
       states: [
@@ -170,32 +171,34 @@ const RepLocator = () => {
     },
     {
       id: 15,
-      name: "Tim McNaboe",
-      title: "Account Manager - North and South Dakota/CED Locations",
+      name: "EMS Partners - North & South Dakota",
+      title:
+        "Tim McNaboe, Account Manager - North and South Dakota/CED Locations",
       email: "tim@emspartnersinc.com",
       phone: "701.595.1538",
       states: ["North Dakota", "South Dakota"],
     },
     {
       id: 16,
-      name: "Ronnie Donley",
-      title: "Account Manager - Viking Electric, Van Meter, JH Larson",
+      name: "EMS Partners - Minneapolis",
+      title:
+        "Ronnie Donley, Account Manager - Viking Electric, Van Meter, JH Larson",
       email: "Ronnie.donley@emspartnersinc.com",
       phone: "763.220.9167",
       states: ["Minnesota", "Iowa", "Wisconsin"],
     },
     {
       id: 17,
-      name: "Shaun Helmuth",
-      title: "Account Manager - Iowa and Nebraska",
+      name: "EMS Partners - Iowa",
+      title: "Shaun Helmuth, Account Manager - Iowa and Nebraska",
       email: "Shaun.hellmuth@emspartnersinc.com",
       phone: "612.772.5048",
       states: ["Iowa", "Nebraska"],
     },
     {
       id: 18,
-      name: "Mike Ellias",
-      title: "Director of EPC Accounts",
+      name: "EMS Partners - Minneapolis",
+      title: "Mike Ellias, Director of EPC Accounts",
       email: "mellias@emspartnersinc.com",
       phone: "612.819.4257",
       states: [
