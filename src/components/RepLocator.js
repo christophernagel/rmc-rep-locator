@@ -29,6 +29,10 @@ const RepLocator = () => {
       ],
       description: "Covered by EMS Partners",
     },
+    "Mid-Atlantic": {
+      states: ["Maryland", "Virginia", "Washington, D.C."],
+      description: "Covered by Phoenix Sales & Marketing Inc.",
+    },
   };
 
   // Get all available states
@@ -209,6 +213,28 @@ const RepLocator = () => {
         "Nebraska",
         "Wisconsin",
       ],
+    },
+    // New Phoenix Sales & Marketing Inc. representatives
+    {
+      id: 19,
+      name: "Phoenix Sales & Marketing Inc. - Maryland",
+      address: "1550 Caton Center Drive, Suite N Halethorpe, MD 21227",
+      phone: "(410) 247-8505",
+      states: ["Maryland"],
+    },
+    {
+      id: 20,
+      name: "Phoenix Sales & Marketing Inc. - Washington, D.C.",
+      address: "NA",
+      phone: "(410) 247-8505",
+      states: ["Washington, D.C."],
+    },
+    {
+      id: 21,
+      name: "Phoenix Sales & Marketing Inc. - Northern Virginia",
+      address: "NA",
+      phone: "(410) 247-8505",
+      states: ["Virginia"],
     },
   ];
 
