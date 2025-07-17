@@ -49,7 +49,7 @@
   transition: all 0.2s ease;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
   cursor: pointer;
-  position: relative; /* Add this */
+  position: relative;
 }
 
 /* Ensure dropdown appears below */
@@ -76,7 +76,7 @@
   border: 1px solid #e5e7eb;
 }
 
-/* Individual Rep Card */
+/* Individual Rep Card - CONSISTENT SPACING */
 .rep-card {
   background: white;
   border: 1px solid #e5e7eb;
@@ -84,13 +84,13 @@
   overflow: hidden;
   transition:
     transform 0.2s ease,
-    box-shadow 0.2s ease !important; /* Add !important */
+    box-shadow 0.2s ease !important;
   height: 100%;
   display: flex;
   flex-direction: column;
+  min-height: 210px; /* Ensure consistent minimum height */
 }
 
-/* Strengthen hover effects */
 .rep-card:hover {
   transform: translateY(-2px) !important;
   box-shadow:
@@ -105,18 +105,26 @@
   flex-direction: column;
 }
 
+/* HEADER SECTION - Fixed height area */
+.rep-card-header {
+  min-height: 3rem; /* Reduced from 5rem */
+  margin-bottom: 1.4rem; /* Reduced from 1.5rem for tighter spacing */
+}
+
+/* CONSISTENT TITLE SPACING */
 .rep-card-title {
-  margin: 0 0 0.5rem 0;
+  margin: 0 0 0.75rem 0;
   color: #111827;
   font-size: 1.25rem;
   font-weight: 600;
   line-height: 1.4;
 }
 
+/* CONSISTENT SUBTITLE SPACING */
 .rep-card-subtitle {
   color: #6b7280;
   font-size: 0.875rem;
-  margin-bottom: 1rem;
+  margin: 0;
   line-height: 1.4;
 }
 
@@ -127,21 +135,25 @@
   border-left: 2px solid #e5e7eb;
 }
 
+/* CONTACT DETAILS - Aligned to bottom */
 .rep-card-details {
   color: #6b7280;
-  margin-top: auto;
+  margin-top: auto; /* Push to bottom - industry standard approach */
+  display: flex;
+  flex-direction: column;
 }
 
-/* Contact Info Styling */
+/* CONSISTENT CONTACT ITEM SPACING */
 .rep-contact-item {
   display: flex;
-  align-items: center;
+  align-items: flex-start; /* Align to top for multi-line content */
   gap: 0.75rem;
-  margin-bottom: 0.75rem;
+  margin-bottom: 0.875rem; /* Consistent spacing between items */
+  min-height: 1.25rem; /* Ensure consistent item height */
 }
 
 .rep-contact-item:last-child {
-  margin-bottom: 0;
+  margin-bottom: 0; /* Remove margin from last item */
 }
 
 .rep-contact-icon {
@@ -149,22 +161,31 @@
   height: 1.25rem;
   color: #f2562c;
   flex-shrink: 0;
+  margin-top: 0.125rem; /* Slight adjustment for better alignment */
 }
 
-.rep-contact-link {
+.rep-contact-link,
+.rep-contact-text {
   color: #4b5563;
   font-size: 0.875rem;
   line-height: 1.5;
-  text-decoration: none !important; /* Add !important */
+  text-decoration: none !important;
+  font-weight: 400;
+  font-family: inherit;
   font-style: normal;
   word-break: break-word;
-  transition: color 0.2s ease !important; /* Add !important */
+  transition: color 0.2s ease !important;
+  margin: 0; /* Remove any default margins */
 }
 
-/* Strengthen hover effect for links */
 .rep-contact-link:hover {
   color: #f2562c !important;
   text-decoration: underline !important;
+}
+
+/* ADDRESS SPECIFIC STYLING - for multi-line addresses */
+.rep-contact-item .rep-contact-text {
+  line-height: 1.4; /* Tighter line height for addresses */
 }
 
 /* Responsive Design */
@@ -188,12 +209,21 @@
     grid-template-columns: 1fr;
   }
 
-  .rep-state-select {
+  .rep-filters {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .rep-filter-group {
     width: 100%;
     max-width: none;
   }
 
   .rep-card-title {
     font-size: 1.125rem;
+  }
+
+  .rep-card {
+    min-height: auto; /* Allow more flexible height on mobile */
   }
 }

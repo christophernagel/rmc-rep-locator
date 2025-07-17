@@ -1,15 +1,60 @@
 import React from "react";
 
-const RepCard = ({ name, title, address, email, phone }) => {
+const RepCard = ({ name, title, address, email, phone, website }) => {
   return (
     <div className="rep-card">
       <div className="rep-card-content">
-        <h3 className="rep-card-title">{name}</h3>
+        {/* Header section with fixed minimum height */}
+        <div className="rep-card-header">
+          <h3 className="rep-card-title">{name}</h3>
+          {/* Show title if it exists */}
+          {title && <div className="rep-card-subtitle">{title}</div>}
+        </div>
 
-        {/* Show title if it exists */}
-        {title && <div className="rep-card-subtitle">{title}</div>}
-
+        {/* Contact details aligned to bottom */}
         <div className="rep-card-details">
+          {/* Show website if it exists */}
+          {website && (
+            <div className="rep-contact-item">
+              <svg
+                viewBox="0 0 24 24"
+                className="rep-contact-icon"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth={2}
+              >
+                <circle
+                  cx="12"
+                  cy="12"
+                  r="10"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+                <line
+                  x1="2"
+                  y1="12"
+                  x2="22"
+                  y2="12"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+                <path
+                  d="m12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+              </svg>
+              <a
+                href={website}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="rep-contact-link"
+              >
+                {website.replace(/^https?:\/\//, "")}
+              </a>
+            </div>
+          )}
+
           {/* Show address if it exists and isn't 'NA' */}
           {address && address !== "NA" && (
             <div className="rep-contact-item">
