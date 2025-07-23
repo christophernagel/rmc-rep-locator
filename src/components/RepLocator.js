@@ -90,6 +90,7 @@ const RepLocator = () => {
       email: "Shaun.hellmuth@emspartnersinc.com",
       phone: "(612) 772-5048",
       website: "https://emspartnersinc.com",
+      address: "1800 Buerkle Rd, White Bear Lake, MN 55110", // Updated address
       states: ["Iowa"],
     },
     {
@@ -99,6 +100,7 @@ const RepLocator = () => {
       email: "mskovran@emspartners.com",
       phone: "(612) 388-0119",
       website: "https://emspartnersinc.com",
+      address: "1800 Buerkle Rd, White Bear Lake, MN 55110", // Updated address
       states: ["Minnesota", "Wisconsin"],
     },
     {
@@ -108,6 +110,7 @@ const RepLocator = () => {
       email: "tim@emspartnersinc.com",
       phone: "(701) 595-1538",
       website: "https://emspartnersinc.com",
+      address: "1800 Buerkle Rd, White Bear Lake, MN 55110", // Updated address
       states: ["North Dakota", "South Dakota"],
     },
     {
@@ -130,7 +133,7 @@ const RepLocator = () => {
       id: 1,
       name: "Ewing Foley - Cupertino",
       address: "10061 Bubb Road, Suite 100 Cupertino, CA 95014",
-      phone: "(408) 342-1200",
+      phone: "(408) 883-3806",
       website: "https://ewingfoley.com",
       states: ["California"],
     },
@@ -300,6 +303,7 @@ const RepLocator = () => {
       title: "Michael Smith",
       address: "1550 Caton Center Drive, Suite N Halethorpe, MD 21227",
       phone: "(410) 247-8505",
+      email: "mike@myphoenixsales.com", // Added email
       website: "https://myphoenixsales.com",
       states: ["Maryland"],
     },
@@ -307,8 +311,9 @@ const RepLocator = () => {
       id: 21,
       name: "Phoenix Sales & Marketing Inc. - Northern Virginia",
       title: "Michael Smith",
-      address: "NA",
+      address: "1550 Caton Center Drive, Suite N Halethorpe, MD 21227", // Updated address
       phone: "(410) 247-8505",
+      email: "mike@myphoenixsales.com", // Added email
       website: "https://myphoenixsales.com",
       states: ["Virginia"],
     },
@@ -316,8 +321,9 @@ const RepLocator = () => {
       id: 20,
       name: "Phoenix Sales & Marketing Inc. - Washington, D.C.",
       title: "Michael Smith",
-      address: "NA",
+      address: "1550 Caton Center Drive, Suite N Halethorpe, MD 21227", // Updated address
       phone: "(410) 247-8505",
+      email: "mike@myphoenixsales.com", // Added email
       website: "https://myphoenixsales.com",
       states: ["Washington, D.C."],
     },
