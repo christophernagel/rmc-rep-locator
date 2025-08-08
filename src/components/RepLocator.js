@@ -44,10 +44,13 @@ const RepLocator = () => {
       states: ["Maryland", "Virginia", "Washington, D.C."],
       description: "Covered by Phoenix Sales & Marketing Inc.",
     },
+    Southeast: {
+      states: ["Florida", "Caribbean"],
+      description: "Covered by Coresential",
+    },
     "RMC Territory": {
       states: [
         "Massachusetts",
-        "Florida",
         "Illinois",
         "Rhode Island",
         "Hawaii",
@@ -112,6 +115,26 @@ const RepLocator = () => {
       website: "https://emspartnersinc.com",
       address: "1800 Buerkle Rd, White Bear Lake, MN 55110", // Updated address
       states: ["North Dakota", "South Dakota"],
+    },
+    {
+      id: 89,
+      name: "Coresential - Florida",
+      title: "David Morrison",
+      email: "bmorrison@coresential.com",
+      phone: "(813) 402-4025",
+      website: "https://coresential.com",
+      address: "3119 Queen Palm Dr., Tampa, FL 33619",
+      states: ["Florida"],
+    },
+    {
+      id: 90,
+      name: "Coresential - Caribbean",
+      title: "David Morrison",
+      email: "bmorrison@coresential.com",
+      phone: "(813) 402-4025",
+      website: "https://coresential.com",
+      address: "3119 Queen Palm Dr., Tampa, FL 33619",
+      states: ["Caribbean"],
     },
     {
       id: 49,
@@ -353,15 +376,6 @@ const RepLocator = () => {
       phone: "(832) 262-1849",
       website: null,
       states: ["Delaware"],
-    },
-    {
-      id: 64,
-      name: "RMC - Florida",
-      title: "Leslie Easter",
-      email: "leaster@repmaterials.com",
-      phone: "(832) 262-1849",
-      website: null,
-      states: ["Florida"],
     },
     {
       id: 65,
