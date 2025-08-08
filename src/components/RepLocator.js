@@ -44,7 +44,7 @@ const RepLocator = () => {
       states: ["Maryland", "Virginia", "Washington, D.C."],
       description: "Covered by Phoenix Sales & Marketing Inc.",
     },
-    Southeast: {
+    "Florida & Caribbean": {
       states: ["Florida", "Caribbean"],
       description: "Covered by Coresential",
     },
@@ -87,13 +87,23 @@ const RepLocator = () => {
   // Updated representatives data with all requested changes
   const representatives = [
     {
+      id: 89,
+      name: "Coresential - Florida & Caribbean",
+      title: "David Morrison",
+      email: "bmorrison@coresential.com",
+      phone: "(813) 402-4025",
+      website: "https://coresential.com",
+      address: "3119 Queen Palm Dr., Tampa, FL 33619",
+      states: ["Florida", "Caribbean"],
+    },
+    {
       id: 17,
       name: "EMS Partners - Iowa",
       title: "Shaun Helmuth",
       email: "Shaun.hellmuth@emspartnersinc.com",
       phone: "(612) 772-5048",
       website: "https://emspartnersinc.com",
-      address: "1800 Buerkle Rd, White Bear Lake, MN 55110", // Updated address
+      address: "1800 Buerkle Rd, White Bear Lake, MN 55110",
       states: ["Iowa"],
     },
     {
@@ -103,7 +113,7 @@ const RepLocator = () => {
       email: "mskovran@emspartners.com",
       phone: "(612) 388-0119",
       website: "https://emspartnersinc.com",
-      address: "1800 Buerkle Rd, White Bear Lake, MN 55110", // Updated address
+      address: "1800 Buerkle Rd, White Bear Lake, MN 55110",
       states: ["Minnesota", "Wisconsin"],
     },
     {
@@ -113,28 +123,8 @@ const RepLocator = () => {
       email: "tim@emspartnersinc.com",
       phone: "(701) 595-1538",
       website: "https://emspartnersinc.com",
-      address: "1800 Buerkle Rd, White Bear Lake, MN 55110", // Updated address
+      address: "1800 Buerkle Rd, White Bear Lake, MN 55110",
       states: ["North Dakota", "South Dakota"],
-    },
-    {
-      id: 89,
-      name: "Coresential - Florida",
-      title: "David Morrison",
-      email: "bmorrison@coresential.com",
-      phone: "(813) 402-4025",
-      website: "https://coresential.com",
-      address: "3119 Queen Palm Dr., Tampa, FL 33619",
-      states: ["Florida"],
-    },
-    {
-      id: 90,
-      name: "Coresential - Caribbean",
-      title: "David Morrison",
-      email: "bmorrison@coresential.com",
-      phone: "(813) 402-4025",
-      website: "https://coresential.com",
-      address: "3119 Queen Palm Dr., Tampa, FL 33619",
-      states: ["Caribbean"],
     },
     {
       id: 49,
@@ -326,7 +316,7 @@ const RepLocator = () => {
       title: "Michael Smith",
       address: "1550 Caton Center Drive, Suite N Halethorpe, MD 21227",
       phone: "(410) 247-8505",
-      email: "mike@myphoenixsales.com", // Added email
+      email: "mike@myphoenixsales.com",
       website: "https://myphoenixsales.com",
       states: ["Maryland"],
     },
@@ -334,9 +324,9 @@ const RepLocator = () => {
       id: 21,
       name: "Phoenix Sales & Marketing Inc. - Northern Virginia",
       title: "Michael Smith",
-      address: "1550 Caton Center Drive, Suite N Halethorpe, MD 21227", // Updated address
+      address: "1550 Caton Center Drive, Suite N Halethorpe, MD 21227",
       phone: "(410) 247-8505",
-      email: "mike@myphoenixsales.com", // Added email
+      email: "mike@myphoenixsales.com",
       website: "https://myphoenixsales.com",
       states: ["Virginia"],
     },
@@ -344,9 +334,9 @@ const RepLocator = () => {
       id: 20,
       name: "Phoenix Sales & Marketing Inc. - Washington, D.C.",
       title: "Michael Smith",
-      address: "1550 Caton Center Drive, Suite N Halethorpe, MD 21227", // Updated address
+      address: "1550 Caton Center Drive, Suite N Halethorpe, MD 21227",
       phone: "(410) 247-8505",
-      email: "mike@myphoenixsales.com", // Added email
+      email: "mike@myphoenixsales.com",
       website: "https://myphoenixsales.com",
       states: ["Washington, D.C."],
     },
